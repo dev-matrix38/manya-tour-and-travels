@@ -9,7 +9,7 @@ Premium, high-converting website built for **Manya Tour & Travels**, Haldwani, i
 - **Mobile / WhatsApp:** +91 6005957610
 - **Location:** Near Kathgodam Railway Station / Main Bus Stand, Haldwani, Uttarakhand
 - **Motto / Devotion:** Jai Badri Vishal | "Your Journey Our Priority" | "आरामदायक व सुगम यात्रा के लिए सम्पर्क करें।"
-- **Featured Vehicle:** Maruti Suzuki Ertiga (UK02 TA 2121), Innova Crysta, Swift Dzire, Tempo Traveller
+- **Featured Vehicle:** Maruti Suzuki Ertiga, Innova Crysta, Swift Dzire, Tempo Traveller
 - **UPI Payment Account:** Parvinder Singh S/O Ajit Singh
 
 ## Pages Included
