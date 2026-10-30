@@ -117,14 +117,12 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0;
-  transform: scale(1);
-  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 7s ease-out;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
 
 .hero-slide.active {
   opacity: 1;
-  transform: scale(1.06);
 }
 
 .hero-overlay {
@@ -133,10 +131,10 @@ body {
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(6, 40, 30, 0.72) 0%,
-    rgba(6, 40, 30, 0.52) 40%,
-    rgba(4, 30, 22, 0.82) 80%,
-    #04261d 100%
+    rgba(4, 30, 22, 0.55) 0%,
+    rgba(0, 0, 0, 0.22) 35%,
+    rgba(0, 0, 0, 0.40) 70%,
+    rgba(4, 38, 29, 0.90) 100%
   );
 }
 
