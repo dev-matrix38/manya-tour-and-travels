@@ -168,25 +168,26 @@ document.addEventListener('DOMContentLoaded', () => {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('modal-name')?.value || 'Guest';
+      const email = document.getElementById('modal-email')?.value || 'Not provided';
       const phone = document.getElementById('modal-phone')?.value || '';
       const destination = document.getElementById('modal-package')?.value || 'Uttarakhand Tour';
       const date = document.getElementById('modal-date')?.value || 'Flexible';
       const passengers = document.getElementById('modal-passengers')?.value || '2';
       const notes = document.getElementById('modal-notes')?.value || 'No special requests';
 
-      const whatsappText = `*New Booking Inquiry - Manya Tour & Travels*\n` +
+      const whatsappText = `*Travel Inquiry - Manya Tour & Travels*\n\n` +
         `👤 *Name:* ${name}\n` +
-        `📞 *Contact:* ${phone}\n` +
-        `📍 *Trip/Package:* ${destination}\n` +
+        `📞 *Phone:* ${phone}\n` +
+        `✉️ *Email:* ${email}\n` +
+        `📍 *Package/Route:* ${destination}\n` +
         `📅 *Travel Date:* ${date}\n` +
-        `👥 *Persons:* ${passengers}\n` +
-        `📝 *Requirement:* ${notes}\n\n` +
-        `Please share pricing and confirm availability. Thank you!`;
+        `👥 *Group Size:* ${passengers}\n` +
+        `📝 *Additional Message:* ${notes}\n\n` +
+        `Please confirm availability and share the best quote. Thank you!`;
 
       const whatsappUrl = `https://wa.me/916005957610?text=${encodeURIComponent(whatsappText)}`;
       window.open(whatsappUrl, '_blank');
 
-      alert('Thank you! Redirecting you to WhatsApp to connect directly with Mr. Parvinder Singh Sachdeva.');
       bookingModal?.classList.add('hidden');
       document.body.style.overflow = '';
     });

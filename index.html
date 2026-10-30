@@ -42,38 +42,14 @@
 </head>
 <body class="bg-white text-gray-800 antialiased font-sans">
 
-  <!-- TOP DEVOTIONAL & CONTACT BAR -->
-  <div class="bg-brand-green-deep text-white text-xs sm:text-sm py-2 px-4 border-b border-emerald-900/40">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-2 font-medium text-amber-300">
-        <span class="inline-block px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-400/30 font-semibold text-[11px]">
-          Jai Badri Vishal
-        </span>
-        <span class="hidden md:inline text-gray-300">|</span>
-        <span class="text-gray-200">आरामदायक व सुगम यात्रा के लिए सम्पर्क करें • 24x7 Customer Support</span>
-      </div>
-      <div class="flex items-center gap-4 text-xs font-semibold">
-        <a href="tel:+916005957610" class="hover:text-amber-400 flex items-center gap-1 transition-colors">
-          <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
-          +91 6005957610 (Parvinder Singh)
-        </a>
-        <span class="text-emerald-700">|</span>
-        <span class="text-emerald-300 flex items-center gap-1">
-          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
-          Haldwani, Uttarakhand
-        </span>
-      </div>
-    </div>
-  </div>
-
-  <!-- MAIN HEADER / NAVBAR (PahadYatra Identical Style) -->
+  <!-- MAIN HEADER / NAVBAR (Exact PahadYatra Replica - No Top Devotional Strip) -->
   <header id="main-nav" class="sticky top-0 z-50 glass-nav transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Logo -->
+        <!-- Logo (Cleaned, no cluttered bottom pill) -->
         <a href="index.html" class="flex items-center gap-3 group">
-          <img src="assets/images/logo.svg" alt="Manya Tour & Travels Haldwani" class="h-12 w-auto group-hover:scale-105 transition-transform duration-300">
+          <img src="assets/images/logo.svg" alt="Manya Tour & Travels" class="h-10 sm:h-11 w-auto group-hover:scale-105 transition-transform duration-300">
         </a>
 
         <!-- Desktop Navigation Links -->
@@ -94,7 +70,7 @@
             <span>+91 6005957610</span>
           </a>
 
-          <!-- Book Now Button (Amber Gradient) -->
+          <!-- Book Now Button (Amber Gradient - Opens Inquiry Modal / Page) -->
           <button class="open-booking-modal group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-[1.02] active:scale-[0.98]">
             <span>Book Now</span>
             <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
@@ -124,10 +100,11 @@
         <nav class="flex flex-col gap-4 text-base font-semibold">
           <a href="index.html" class="text-amber-400 py-2 border-b border-white/5">Home</a>
           <a href="packages.html" class="hover:text-amber-400 py-2 border-b border-white/5">Tour Packages</a>
-          <a href="taxi-services.html" class="hover:text-amber-400 py-2 border-b border-white/5">Taxi & Car Booking</a>
+          <a href="taxi-services.html" class="hover:text-amber-400 py-2 border-b border-white/5">Taxi &amp; Car Booking</a>
           <a href="#why-choose-us" class="hover:text-amber-400 py-2 border-b border-white/5">Why Choose Us</a>
           <a href="about.html" class="hover:text-amber-400 py-2 border-b border-white/5">About Us</a>
-          <a href="contact.html" class="hover:text-amber-400 py-2">Contact Us</a>
+          <a href="contact.html" class="hover:text-amber-400 py-2 border-b border-white/5">Contact Us</a>
+          <a href="inquiry.html" class="text-amber-300 py-2">Travel Inquiry</a>
         </nav>
       </div>
 
@@ -150,13 +127,10 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 text-center">
       
-      <!-- Trust Badge (Green Pulsing Dot) -->
-      <div class="inline-flex items-center gap-2 bg-white/95 backdrop-blur-md px-6 py-2.5 rounded-full shadow-lg shadow-black/10 mb-8 border border-white/40">
-        <span class="relative flex h-3 w-3">
-          <span class="ping-dot absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
-        </span>
-        <span class="text-gray-900 text-sm font-semibold tracking-wide">Trusted by 5000+ Pilgrims &amp; Travelers</span>
+      <!-- Trust Badge (Exact PahadYatra Pill Style) -->
+      <div class="inline-flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-6 py-2.5 rounded-full shadow-lg shadow-black/10 mb-8 border border-white/40">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+        <span class="text-gray-900 text-sm font-semibold tracking-wide">Trusted by 5000+ Travelers</span>
       </div>
 
       <!-- Main Headline (Golden Serif Italic + White Bold) -->
@@ -223,7 +197,7 @@
     </div>
   </section>
 
-  <!-- QUICK CAB & ROUTE FARE CALCULATOR BAR (Value-Add Feature for Haldwani Customers) -->
+  <!-- QUICK CAB & ROUTE FARE CALCULATOR BAR -->
   <section class="relative z-20 -mt-10 max-w-6xl mx-auto px-4">
     <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 border border-gray-100">
       <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
@@ -452,7 +426,7 @@
     </div>
   </section>
 
-  <!-- POPULAR PACKAGES SECTION (Identical to PahadYatra's Package Layout) -->
+  <!-- POPULAR PACKAGES SECTION -->
   <section id="packages" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -486,7 +460,6 @@
         <!-- Package 1: Kainchi Dham Darshan Tour -->
         <div class="package-card pkg-card-item rounded-2xl overflow-hidden bg-white shadow-sm flex flex-col justify-between" data-category="kainchi">
           <div>
-            <!-- Image & Badges -->
             <div class="relative h-60 overflow-hidden">
               <img src="assets/images/kainchi_dham.jpg" alt="Kainchi Dham Neeb Karori Baba Ashram" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
               <div class="absolute top-4 left-4 flex gap-2">
@@ -499,7 +472,6 @@
               </div>
             </div>
 
-            <!-- Content -->
             <div class="p-6">
               <h3 class="text-xl font-bold text-brand-green mb-2 hover:text-emerald-700 transition-colors">
                 Kainchi Dham &amp; Golu Devta Darshan Special
@@ -508,7 +480,6 @@
                 Sacred pilgrimage to Neeb Karori Baba Ashram (Kainchi Dham), Chitai/Ghorakhal Golu Devta, and serene Bhimtal Lake.
               </p>
 
-              <!-- Inclusions Checkmarks -->
               <div class="space-y-1.5 text-xs text-gray-600 mb-6 border-t border-gray-100 pt-4">
                 <div class="flex items-center gap-2">
                   <span class="text-emerald-600 font-bold">✓</span> Dedicated Sanitized Cab (Ertiga/Dzire)
@@ -523,7 +494,6 @@
             </div>
           </div>
 
-          <!-- Price & Actions Footer -->
           <div class="px-6 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
             <div>
               <div class="text-xs text-gray-400 line-through">₹4,999</div>
@@ -752,7 +722,7 @@
           </div>
         </div>
 
-        <!-- Package 6: Himachal & Uttarakhand Special -->
+        <!-- Package 6: Himachal & Group Special -->
         <div class="package-card pkg-card-item rounded-2xl overflow-hidden bg-white shadow-sm flex flex-col justify-between" data-category="chardham">
           <div>
             <div class="relative h-60 overflow-hidden">
@@ -807,7 +777,7 @@
     </div>
   </section>
 
-  <!-- TAXI & CAR RENTAL FLEET (Directly Highlighting Customer's Visiting Card & Featured UK02 TA 2121) -->
+  <!-- TAXI & CAR RENTAL FLEET -->
   <section class="py-20 bg-gray-50 border-t border-b border-gray-200/70">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -935,22 +905,13 @@
     </div>
   </section>
 
-  <!-- OFFICIAL VISITING CARD & VERIFICATION SECTION -->
+  <!-- OFFICIAL VISITING CARD SECTION (Cleaned, Correct Upright Orientation) -->
   <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-gradient-to-br from-emerald-900 to-brand-green-dark rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
         
-        <!-- Background Mountain Silhouette Accent -->
-        <div class="absolute -right-20 -bottom-20 opacity-10 pointer-events-none">
-          <svg width="400" height="400" viewBox="0 0 200 200"><polygon points="100,10 190,190 10,190" fill="#ffffff"/></svg>
-        </div>
-
         <div class="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <div class="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-xs font-semibold text-amber-300 mb-4 border border-white/20">
-              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-              Verified Local Haldwani Tour Operator
-            </div>
             <h3 class="text-3xl sm:text-4xl font-bold mb-4 font-serif">
               Manya Tour &amp; Travels
             </h3>
@@ -991,7 +952,7 @@
             </div>
           </div>
 
-          <!-- Card Graphic Preview -->
+          <!-- Card Graphic Preview (Correct Upright Orientation) -->
           <div class="flex flex-col items-center">
             <div class="bg-white/10 p-3 rounded-2xl border border-white/20 shadow-2xl backdrop-blur-md transform transition-transform hover:scale-102 max-w-sm">
               <img src="assets/images/visiting_card_front.jpg" alt="Manya Tour and Travels Visiting Card Haldwani" class="w-full h-auto rounded-xl shadow-inner">
@@ -1034,19 +995,19 @@
       <!-- 3 CTA Action Buttons (Orange + White Call + Green WhatsApp) -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
         
-        <!-- Book Your Trip (Amber Gradient) -->
+        <!-- Book Your Trip -->
         <button class="open-booking-modal group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg shadow-amber-500/25 hover:shadow-xl hover:shadow-amber-500/35 hover:scale-[1.02] active:scale-[0.98]">
           <span>Book Your Trip</span>
           <svg class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
 
-        <!-- Call Us Now (White Pill with Emerald Phone Icon) -->
+        <!-- Call Us Now -->
         <a href="tel:+916005957610" class="inline-flex items-center justify-center gap-2 bg-white/95 hover:bg-white backdrop-blur-md text-gray-800 px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/15 hover:scale-[1.02] active:scale-[0.98] border border-gray-200">
           <svg class="h-5 w-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
           <span>Call Us Now</span>
         </a>
 
-        <!-- WhatsApp (Official WhatsApp Green Button) -->
+        <!-- WhatsApp -->
         <a href="https://wa.me/916005957610?text=Hello%20Mr.%20Parvinder%20Singh!%20I%20want%20to%20inquire%20about%20Uttarakhand%20Tour%20and%20Yatra%20Packages." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-emerald-500/30 hover:scale-[1.02] active:scale-[0.98]">
           <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           <span>WhatsApp</span>
@@ -1080,25 +1041,20 @@
     </div>
   </section>
 
-  <!-- FOOTER (Exact Replica of PahadYatra Image 5) -->
+  <!-- FOOTER (Exact Cleaned Replica of PahadYatra Image 5) -->
   <footer class="bg-brand-green-dark text-white pt-6 pb-12 border-t border-emerald-900/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-emerald-800/40">
         
-        <!-- Col 1: Brand Info -->
+        <!-- Col 1: Brand Info (Cleaned, no extra devotional lines) -->
         <div class="space-y-4">
           <a href="index.html" class="inline-block">
-            <img src="assets/images/logo.svg" alt="Manya Tour & Travels Haldwani" class="h-12 w-auto">
+            <img src="assets/images/logo.svg" alt="Manya Tour & Travels" class="h-10 w-auto">
           </a>
           <p class="text-emerald-100/80 text-sm leading-relaxed">
             Specialists in Kainchi Dham, Nainital, Char Dham, Adi Kailash &amp; Uttarakhand Tours. All-inclusive packages from ₹2,999. 5000+ happy pilgrims served.
           </p>
-          <div class="pt-2 text-xs text-amber-300 font-semibold flex items-center gap-2">
-            <span>✨ Jai Badri Vishal</span>
-            <span>•</span>
-            <span>Safe Journey, Happy Memories</span>
-          </div>
         </div>
 
         <!-- Col 2: Quick Links -->
@@ -1165,16 +1121,16 @@
           © 2026 Manya Tour &amp; Travels. All Rights Reserved. Haldwani, Uttarakhand.
         </div>
         <div class="flex items-center gap-6">
-          <span>आरामदायक व सुगम यात्रा के लिए सम्पर्क करें</span>
+          <a href="contact.html" class="hover:text-amber-300">Privacy Policy</a>
           <span>•</span>
-          <a href="contact.html" class="hover:text-amber-300">Privacy &amp; Terms</a>
+          <a href="contact.html" class="hover:text-amber-300">Terms of Service</a>
         </div>
       </div>
 
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP CHAT BUTTON (Bottom Right - Exactly Like PahadYatra) -->
+  <!-- FLOATING WHATSAPP CHAT BUTTON -->
   <div class="fixed bottom-6 right-6 z-40 flex items-center group">
     <div class="hidden sm:block mr-3 bg-white text-gray-800 text-xs font-bold py-1.5 px-3 rounded-full shadow-lg border border-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       Chat with Mr. Parvinder Singh
@@ -1199,76 +1155,157 @@
     </button>
   </div>
 
-  <!-- TRIP INQUIRY & BOOKING MODAL -->
-  <div id="booking-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-gray-100 max-h-[90vh] overflow-y-auto">
-      <button id="close-booking-modal" class="absolute top-5 right-5 text-gray-400 hover:text-gray-700 p-2">
+  <!-- BOOK NOW / TRAVEL INQUIRY MODAL (Exact Replica of Uploaded Image 4) -->
+  <div id="booking-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div class="bg-gray-50 rounded-3xl max-w-4xl w-full p-4 sm:p-8 shadow-2xl relative border border-gray-200 my-auto max-h-[95vh] overflow-y-auto">
+      <button id="close-booking-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 p-2 z-10 bg-white rounded-full shadow-sm">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
 
-      <div class="mb-6">
-        <span class="inline-block bg-emerald-50 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2 border border-emerald-200">
-          Manya Tour &amp; Travels (Haldwani)
-        </span>
-        <h3 class="text-2xl font-bold text-brand-green">Book Your Sacred Journey</h3>
-        <p class="text-xs text-gray-500 mt-1">Direct booking inquiry with Mr. Parvinder Singh Sachdeva</p>
+      <!-- 2-Column Layout Matching Image 4 -->
+      <div class="grid lg:grid-cols-12 gap-6 items-start mt-2">
+        
+        <!-- Left Column: Travel Inquiry Form (8 cols) -->
+        <div class="lg:col-span-8 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200">
+          <h2 class="text-2xl font-bold text-brand-green mb-6">
+            Travel Inquiry Form
+          </h2>
+
+          <form id="quick-booking-form" class="space-y-4">
+            
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                  Full Name <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="modal-name" required placeholder="Your full name" class="w-full bg-white border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-600 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                  Email Address
+                </label>
+                <input type="email" id="modal-email" placeholder="your.email@example.com" class="w-full bg-white border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-600 focus:outline-none">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                  Phone Number <span class="text-red-500">*</span>
+                </label>
+                <input type="tel" id="modal-phone" required placeholder="+91 81264 88895" class="w-full bg-white border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-600 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                  Package Interest
+                </label>
+                <select id="modal-package" class="w-full bg-white border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-600 focus:outline-none text-gray-700">
+                  <option value="">Select a package</option>
+                  <option value="Kainchi Dham Darshan (Kathgodam Departure)">Kainchi Dham Darshan (Kathgodam Departure)</option>
+                  <option value="Nainital, Bhimtal & Mukteshwar Tour">Nainital, Bhimtal &amp; Mukteshwar Tour</option>
+                  <option value="Char Dham Yatra 2026">Char Dham Yatra 2026</option>
+                  <option value="Adi Kailash & Om Parvat Yatra">Adi Kailash &amp; Om Parvat Yatra</option>
+                  <option value="Kathgodam / Haldwani Taxi Rental">Kathgodam / Haldwani Taxi Rental</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                  Preferred Travel Date
+                </label>
+                <input type="date" id="modal-date" class="w-full bg-white border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-600 focus:outline-none text-gray-700">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                  Group Size
+                </label>
+                <select id="modal-passengers" class="w-full bg-white border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-emerald-600 focus:outline-none text-gray-700">
+                  <option value="">Select group size</option>
+                  <option value="1-2 Persons">1 - 2 Persons (Sedan)</option>
+                  <option value="3-5 Persons">3 - 5 Persons (Ertiga UK02 TA 2121)</option>
+                  <option value="6-8 Persons">6 - 8 Persons (Innova Crysta)</option>
+                  <option value="9+ Persons">9+ Persons (Tempo Traveller)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                Additional Message
+              </label>
+              <textarea id="modal-notes" rows="3" placeholder="Tell us about your travel preferences, special requirements, or any questions..." class="w-full bg-white border border-gray-300 rounded-xl px-3.5 py-2 text-sm focus:ring-2 focus:ring-emerald-600 focus:outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-amber-500/25 transition-all text-sm flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              <span>Submit Inquiry</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column: Prefer to Talk & Why Book (4 cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          
+          <!-- Prefer to Talk? Card -->
+          <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-200">
+            <h3 class="text-lg font-bold text-brand-green mb-1">Prefer to Talk?</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Our travel consultants are available to help you plan your perfect trip.
+            </p>
+
+            <div class="space-y-3">
+              <a href="tel:+916005957610" class="flex items-center gap-3 group">
+                <div class="w-8 h-8 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:bg-emerald-50 group-hover:text-emerald-700 transition-colors">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <div class="text-[10px] font-bold text-gray-500 uppercase">Call Us</div>
+                  <div class="text-xs font-bold text-gray-900 group-hover:text-brand-green">+91 6005957610</div>
+                </div>
+              </a>
+
+              <a href="mailto:manyatourtravelshaldwani@gmail.com" class="flex items-center gap-3 group">
+                <div class="w-8 h-8 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-700 group-hover:bg-emerald-50 group-hover:text-emerald-700 transition-colors">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <div class="text-[10px] font-bold text-gray-500 uppercase">Email Us</div>
+                  <div class="text-[11px] font-semibold text-gray-900 group-hover:text-brand-green break-all">manyatourtravelshaldwani@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/916005957610" target="_blank" class="flex items-center gap-3 group">
+                <div class="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.965.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.064-1.127-.074-.263-.084-.606-.197-1.045-.386-1.848-.795-3.041-2.656-3.133-2.779-.092-.123-.746-.991-.746-1.892 0-.901.472-1.343.64-1.526.168-.184.368-.23.491-.23.123 0 .245.001.353.006.113.006.264-.043.413.315.153.368.522 1.272.568 1.365.046.092.077.2.016.323-.062.123-.092.2-.184.307-.092.108-.194.241-.277.323-.092.092-.188.192-.081.376.107.184.477.788 1.023 1.274.704.627 1.298.82 1.482.912.184.092.292.077.4-.046.108-.123.461-.537.584-.721.123-.184.246-.153.415-.092.169.061 1.074.507 1.258.6.184.092.307.138.353.215.046.077.046.445-.098.85zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.98-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                </div>
+                <div>
+                  <div class="text-[10px] font-bold text-gray-500 uppercase">WhatsApp</div>
+                  <div class="text-xs font-bold text-emerald-600">Quick Response</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Why Book With Us? Card -->
+          <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-200">
+            <h3 class="text-lg font-bold text-brand-green mb-3">Why Book With Us?</h3>
+            <ul class="space-y-2 text-xs text-gray-700 font-medium">
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> 10+ Years of Experience</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> 5000+ Happy Travelers</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Best Price Guarantee</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> 24/7 Customer Support</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Flexible Cancellation</li>
+            </ul>
+          </div>
+
+        </div>
+
       </div>
-
-      <form id="quick-booking-form" class="space-y-4">
-        <div>
-          <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Your Full Name</label>
-          <input type="text" id="modal-name" required placeholder="e.g. Rahul Sharma" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-        </div>
-
-        <div>
-          <label class="block text-xs font-bold text-gray-700 uppercase mb-1">WhatsApp / Phone Number</label>
-          <input type="tel" id="modal-phone" required placeholder="e.g. 9876543210" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Destination / Package</label>
-            <input type="text" id="modal-package" placeholder="e.g. Kainchi Dham / Char Dham" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Expected Date</label>
-            <input type="date" id="modal-date" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Number of Pilgrims</label>
-            <select id="modal-passengers" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-              <option value="1-2">1 - 2 Persons (Sedan)</option>
-              <option value="3-5" selected>3 - 5 Persons (Ertiga UK02 TA 2121)</option>
-              <option value="6-7">6 - 7 Persons (Innova Crysta)</option>
-              <option value="8+">8+ Persons (Tempo Traveller)</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Pickup Location</label>
-            <select class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-              <option value="kathgodam">Kathgodam Railway Station</option>
-              <option value="haldwani">Haldwani Bus Stand / City</option>
-              <option value="pantnagar">Pantnagar Airport</option>
-              <option value="delhi">Delhi / Bareilly Pickup</option>
-            </select>
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Special Requirements / Notes</label>
-          <textarea id="modal-notes" rows="2" placeholder="e.g. Need hotel booking, elderly pilgrim assistance, luggage carrier" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none"></textarea>
-        </div>
-
-        <div class="pt-2">
-          <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-emerald-600/25 transition-all text-sm flex items-center justify-center gap-2">
-            <span>Send Inquiry on WhatsApp</span>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 1.965.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.064-1.127-.074-.263-.084-.606-.197-1.045-.386-1.848-.795-3.041-2.656-3.133-2.779-.092-.123-.746-.991-.746-1.892 0-.901.472-1.343.64-1.526.168-.184.368-.23.491-.23.123 0 .245.001.353.006.113.006.264-.043.413.315.153.368.522 1.272.568 1.365.046.092.077.2.016.323-.062.123-.092.2-.184.307-.092.108-.194.241-.277.323-.092.092-.188.192-.081.376.107.184.477.788 1.023 1.274.704.627 1.298.82 1.482.912.184.092.292.077.4-.046.108-.123.461-.537.584-.721.123-.184.246-.153.415-.092.169.061 1.074.507 1.258.6.184.092.307.138.353.215.046.077.046.445-.098.85zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.98-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-          </button>
-        </div>
-      </form>
     </div>
   </div>
 
