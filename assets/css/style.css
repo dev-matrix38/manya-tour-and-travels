@@ -102,22 +102,56 @@ body {
   animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
-/* Hero Background image overlay */
-.hero-bg-container {
-  position: relative;
+/* Hero Background Slider */
+.hero-slider-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
-  background-position: center 25%;
+  background-position: center center;
   background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 7s ease-out;
+  pointer-events: none;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  transform: scale(1.06);
 }
 
 .hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   background: linear-gradient(
     180deg,
     rgba(6, 40, 30, 0.72) 0%,
-    rgba(6, 40, 30, 0.55) 40%,
+    rgba(6, 40, 30, 0.52) 40%,
     rgba(4, 30, 22, 0.82) 80%,
     #04261d 100%
   );
+}
+
+.slider-indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.slider-indicator-dot.active {
+  width: 28px;
+  background-color: #F59E0B;
 }
 
 /* Why Choose Us Cards */

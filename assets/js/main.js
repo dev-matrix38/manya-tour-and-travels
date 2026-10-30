@@ -40,6 +40,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // 2b. Hero Background Slideshow (5 Uttarakhand Photos)
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  const sliderDots = document.querySelectorAll('.slider-indicator-dot');
+  const heroPrevBtn = document.getElementById('hero-prev-btn');
+  const heroNextBtn = document.getElementById('hero-next-btn');
+  let currentSlideIdx = 0;
+  let heroSlideTimer = null;
+
+  function setHeroSlide(index) {
+    if (!heroSlides.length) return;
+    heroSlides.forEach(slide => slide.classList.remove('active'));
+    sliderDots.forEach(dot => dot.classList.remove('active'));
+
+    currentSlideIdx = (index + heroSlides.length) % heroSlides.length;
+    heroSlides[currentSlideIdx].classList.add('active');
+    if (sliderDots[currentSlideIdx]) {
+      sliderDots[currentSlideIdx].classList.add('active');
+    }
+  }
+
+  function advanceNextSlide() {
+    setHeroSlide(currentSlideIdx + 1);
+  }
+
+  function advancePrevSlide() {
+    setHeroSlide(currentSlideIdx - 1);
+  }
+
+  function restartSlideTimer() {
+    if (heroSlideTimer) clearInterval(heroSlideTimer);
+    if (heroSlides.length > 1) {
+      heroSlideTimer = setInterval(advanceNextSlide, 5000);
+    }
+  }
+
+  if (heroSlides.length > 1) {
+    restartSlideTimer();
+
+    if (heroPrevBtn) {
+      heroPrevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        advancePrevSlide();
+        restartSlideTimer();
+      });
+    }
+
+    if (heroNextBtn) {
+      heroNextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        advanceNextSlide();
+        restartSlideTimer();
+      });
+    }
+
+    sliderDots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        setHeroSlide(idx);
+        restartSlideTimer();
+      });
+    });
+  }
+
   // 3. Package Filter Tabs
   const filterBtns = document.querySelectorAll('.pkg-filter-btn');
   const pkgCards = document.querySelectorAll('.pkg-card-item');
