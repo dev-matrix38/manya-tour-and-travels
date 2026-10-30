@@ -1,43 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 48" fill="none" class="h-9 sm:h-10 w-auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" class="h-9 sm:h-10 w-auto">
   <defs>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FBBF24" />
+    <linearGradient id="goldMtn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
       <stop offset="50%" stop-color="#F59E0B" />
       <stop offset="100%" stop-color="#D97706" />
     </linearGradient>
-    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FDE68A" />
-      <stop offset="100%" stop-color="#F59E0B" />
-    </linearGradient>
   </defs>
 
-  <!-- Mountain Peaks Icon -->
-  <g transform="translate(0, 3)">
-    <circle cx="24" cy="15" r="9" fill="url(#sunGrad)" opacity="0.85" />
-    <!-- Rear Peak -->
-    <polygon points="24,5 38,36 10,36" fill="#047857" opacity="0.6" />
-    <!-- Left Peak -->
-    <polygon points="13,13 26,40 0,40" fill="#065F46" />
-    <!-- Right Peak -->
-    <polygon points="30,9 45,41 16,41" fill="#064E3B" />
-    <!-- Snow Caps -->
-    <polygon points="13,13 17,20 9,20" fill="#FFFFFF" opacity="0.95" />
-    <polygon points="30,9 35,18 24,18" fill="#FFFFFF" opacity="0.95" />
-    <polygon points="24,5 28,14 20,14" fill="#FFFFFF" opacity="0.8" />
-    <!-- Winding Golden Road -->
-    <path d="M 5 41 C 16 41, 15 32, 28 30 C 39 28, 35 21, 42 18" 
-          stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <!-- PahadYatra-style Twin Mountain 'M' Icon -->
+  <g transform="translate(2, 6)">
+    <!-- Base horizon -->
+    <line x1="2" y1="32" x2="38" y2="32" stroke="url(#goldMtn)" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+    <!-- Mountain Peaks forming M -->
+    <path d="M 3 32 L 14 11 L 21 21 L 29 5 L 37 32" stroke="url(#goldMtn)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Snow peak highlight strokes -->
+    <path d="M 14 11 L 16.5 15" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 29 5 L 26 11.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
   </g>
 
-  <!-- Brand Typography with generous space -->
-  <g transform="translate(52, 31)">
-    <!-- "Manya" with serif flair and golden gradient -->
-    <text x="0" y="0" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="26" fill="url(#goldGrad)" letter-spacing="0.5">
-      Manya
+  <!-- Brand Typography: Stacked Luxury Layout -->
+  <g transform="translate(50, 0)">
+    <!-- MANYA (Bold Crisp White) -->
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" letter-spacing="0.5">
+      MANYA
     </text>
-    <!-- "Tour & Travels" cleanly spaced -->
-    <text x="100" y="-1" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="700" font-size="19" fill="#FFFFFF" letter-spacing="0.5">
-      Tour &amp; Travels
+    <!-- TOUR & TRAVELS (Amber-Gold Wide Tracking) -->
+    <text x="0" y="39" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-weight="700" font-size="9.5" fill="url(#goldMtn)" letter-spacing="2.6">
+      TOUR &amp; TRAVELS
     </text>
   </g>
 </svg>

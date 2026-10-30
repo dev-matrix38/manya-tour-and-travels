@@ -1,36 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 48" fill="none" class="h-9 sm:h-10 w-auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" class="h-9 sm:h-10 w-auto">
   <defs>
-    <linearGradient id="goldGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D97706" />
-      <stop offset="50%" stop-color="#B45309" />
-      <stop offset="100%" stop-color="#92400E" />
-    </linearGradient>
-    <linearGradient id="sunGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FBBF24" />
+    <linearGradient id="goldMtnDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
       <stop offset="100%" stop-color="#D97706" />
     </linearGradient>
   </defs>
 
-  <!-- Mountain Peaks Icon -->
-  <g transform="translate(0, 3)">
-    <circle cx="24" cy="15" r="9" fill="url(#sunGradDark)" opacity="0.85" />
-    <polygon points="24,5 38,36 10,36" fill="#047857" opacity="0.4" />
-    <polygon points="13,13 26,40 0,40" fill="#065F46" />
-    <polygon points="30,9 45,41 16,41" fill="#064E3B" />
-    <polygon points="13,13 17,20 9,20" fill="#FFFFFF" opacity="0.95" />
-    <polygon points="30,9 35,18 24,18" fill="#FFFFFF" opacity="0.95" />
-    <polygon points="24,5 28,14 20,14" fill="#FFFFFF" opacity="0.8" />
-    <path d="M 5 41 C 16 41, 15 32, 28 30 C 39 28, 35 21, 42 18" 
-          stroke="#D97706" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <!-- PahadYatra-style Twin Mountain 'M' Icon -->
+  <g transform="translate(2, 6)">
+    <line x1="2" y1="32" x2="38" y2="32" stroke="url(#goldMtnDark)" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 3 32 L 14 11 L 21 21 L 29 5 L 37 32" stroke="url(#goldMtnDark)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 14 11 L 16.5 15" stroke="#04261D" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 29 5 L 26 11.5" stroke="#04261D" stroke-width="2.2" stroke-linecap="round"/>
   </g>
 
-  <!-- Brand Typography -->
-  <g transform="translate(52, 31)">
-    <text x="0" y="0" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="26" fill="#B45309" letter-spacing="0.5">
-      Manya
+  <!-- Brand Typography: Dark Theme -->
+  <g transform="translate(50, 0)">
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" fill="#04261D" letter-spacing="0.5">
+      MANYA
     </text>
-    <text x="100" y="-1" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="700" font-size="19" fill="#064E3B" letter-spacing="0.5">
-      Tour &amp; Travels
+    <text x="0" y="39" font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" font-weight="700" font-size="9.5" fill="url(#goldMtnDark)" letter-spacing="2.6">
+      TOUR &amp; TRAVELS
     </text>
   </g>
 </svg>
