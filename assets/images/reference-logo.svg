@@ -1,0 +1,10 @@
+<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mountain peaks -->
+  <path d="M8 28L14 16L20 22L26 12L32 28" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Snow cap on peak -->
+  <path d="M14 16L17 20M20 22L23 26" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+
+  <!-- Base line -->
+  <line x1="6" y1="28" x2="34" y2="28" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+</svg>
